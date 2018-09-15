@@ -25,7 +25,7 @@ def rainbow_cycle(pixels, wait=0.001):
         for j in range(pixels.count()):
             pixels.set_pixel(j, wheel(((i * 256 // pixels.count()) + j) % 256))
         pixels.show()
-        if wat > 0:
+        if wait > 0:
             time.sleep(wait)
 
 if __name__ == "__main__":
